@@ -13,7 +13,7 @@ const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
 	return (
 		<html suppressHydrationWarning className="scroll-smooth scroll-p-[5rem]">
 			<head></head>
-			<body className="dark:bg-dark bg-white" style={InterFont.style}>
+			<body className="bg-background" style={InterFont.style}>
 				<Providers>
 					<div className="max-w-5xl m-auto px-4 pt-2">{children}</div>
 				</Providers>

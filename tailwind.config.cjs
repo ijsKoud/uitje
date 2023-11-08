@@ -18,7 +18,6 @@ module.exports = {
 				.map((_, key) => ({ [key + 1]: [(key + 1) * 4] }))
 				.reduce((a, b) => ({ ...a, ...b }), {}),
 			colors: {
-				dark: "#131313",
 				border: "hsl(var(--border))",
 				input: "hsl(var(--input))",
 				ring: "hsl(var(--ring))",
