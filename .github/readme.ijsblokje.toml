@@ -1,0 +1,8 @@
+[project]
+icon = "http://cdn.ijskoud.dev/assets/logo.svg"
+icon_width = "100%"
+version = "1.0.0"
+
+[variables]
+information = ""
+installation = "n/a"
