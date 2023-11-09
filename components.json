@@ -11,6 +11,6 @@
 		"baseColor": "zinc",
 		"config": "tailwind.config.cjs",
 		"css": "styles/global.css",
-		"cssVariables": false
+		"cssVariables": true
 	}
 }
