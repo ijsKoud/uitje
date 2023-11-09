@@ -37,6 +37,7 @@
 	"dependencies": {
 		"@hookform/resolvers": "^3.3.2",
 		"@radix-ui/react-toast": "^1.1.5",
+		"@tanstack/react-table": "^8.10.7",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.0.0",
 		"lucide-react": "^0.292.0",
