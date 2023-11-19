@@ -1,14 +1,14 @@
 {
-	"name": "balance",
+	"name": "uitje",
 	"version": "1.0.0",
-	"description": "Balance sheet for your income",
+	"description": "Easily calculate and receive the money other people owe you",
 	"author": "ijsKoud <github@ijskoud.dev>",
 	"license": "MIT",
 	"workspaces": [
 		"apps/*",
 		"packages/*"
 	],
-	"homepage": "https://github.com/ijsKoud/balance",
+	"homepage": "https://github.com/ijsKoud/uitje",
 	"scripts": {
 		"build": "turbo run build",
 		"start:dev": "turbo run dev --parallel",
@@ -37,7 +37,9 @@
 	"dependencies": {
 		"@hookform/resolvers": "^3.3.2",
 		"@radix-ui/react-toast": "^1.1.5",
+		"@tanstack/react-query": "^5.8.3",
 		"@tanstack/react-table": "^8.10.7",
+		"axios": "^1.6.1",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.0.0",
 		"date-fns": "^2.30.0",

@@ -37,39 +37,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@balance/ui@npm:*, @balance/ui@workspace:packages/ui":
-  version: 0.0.0-use.local
-  resolution: "@balance/ui@workspace:packages/ui"
-  dependencies:
-    "@balance/utils": "npm:*"
-    "@radix-ui/react-avatar": "npm:^1.0.4"
-    "@radix-ui/react-checkbox": "npm:^1.0.4"
-    "@radix-ui/react-dialog": "npm:^1.0.5"
-    "@radix-ui/react-dropdown-menu": "npm:^2.0.6"
-    "@radix-ui/react-label": "npm:^2.0.2"
-    "@radix-ui/react-popover": "npm:^1.0.7"
-    "@radix-ui/react-scroll-area": "npm:^1.0.5"
-    "@radix-ui/react-select": "npm:^2.0.0"
-    "@radix-ui/react-slot": "npm:^1.0.2"
-    "@types/react": "npm:^18.2.35"
-    "@types/react-dom": "npm:^18.2.14"
-    eslint: "npm:^8.53.0"
-    react: "npm:^18.2.0"
-    react-day-picker: "npm:^8.9.1"
-    react-dom: "npm:18.2.0"
-    typescript: "npm:^5.2.2"
-  languageName: unknown
-  linkType: soft
-
-"@balance/utils@npm:*, @balance/utils@workspace:packages/utils":
-  version: 0.0.0-use.local
-  resolution: "@balance/utils@workspace:packages/utils"
-  dependencies:
-    eslint: "npm:^8.53.0"
-    typescript: "npm:^5.2.2"
-  languageName: unknown
-  linkType: soft
-
 "@eslint-community/eslint-utils@npm:^4.2.0":
   version: 4.2.0
   resolution: "@eslint-community/eslint-utils@npm:4.2.0"
@@ -430,6 +397,34 @@ __metadata:
     tiny-glob: "npm:^0.2.9"
     tslib: "npm:^2.4.0"
   checksum: 50c2480c3580c0f75b9325271deeb4f4cb24f6a29f1ebc5a7de0c6991380e23625fd554ecdbc7d7e93ad6dab92532a254f7490433cf2b8f1b18d75c9e01636ea
+  languageName: node
+  linkType: hard
+
+"@prisma/client@npm:^5.5.2":
+  version: 5.5.2
+  resolution: "@prisma/client@npm:5.5.2"
+  dependencies:
+    "@prisma/engines-version": "npm:5.5.1-1.aebc046ce8b88ebbcb45efe31cbe7d06fd6abc0a"
+  peerDependencies:
+    prisma: "*"
+  peerDependenciesMeta:
+    prisma:
+      optional: true
+  checksum: cf5356e715279b1d0f03b083665ca85698d9cfa3efcef6d8ed7bd6d2b884f672ea5d61de372ff3d2019c4a39b65297f89bc6b5b9c52be1a8e64d1e561e0180b0
+  languageName: node
+  linkType: hard
+
+"@prisma/engines-version@npm:5.5.1-1.aebc046ce8b88ebbcb45efe31cbe7d06fd6abc0a":
+  version: 5.5.1-1.aebc046ce8b88ebbcb45efe31cbe7d06fd6abc0a
+  resolution: "@prisma/engines-version@npm:5.5.1-1.aebc046ce8b88ebbcb45efe31cbe7d06fd6abc0a"
+  checksum: 5275cd9fcbe22cf14adefa6f794909836965a838c3d506d5fdd25560526d3b0d3023b38dcc8db33cc16bbdea91f0e4bcbe69192610c591672824f4dd1f199ac5
+  languageName: node
+  linkType: hard
+
+"@prisma/engines@npm:5.5.2":
+  version: 5.5.2
+  resolution: "@prisma/engines@npm:5.5.2"
+  checksum: 8f813c299980491e9ec20044d33246f850ebc1cb93ada17c833fc7182c70d4626e76c69b7256c79527bfe1c81ec0ba7f9f5d794fddde76d246b01fb815b55edf
   languageName: node
   linkType: hard
 
@@ -1235,6 +1230,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tanstack/query-core@npm:5.8.3":
+  version: 5.8.3
+  resolution: "@tanstack/query-core@npm:5.8.3"
+  checksum: cc2cc74f63b73dfda241de0c468e81be1db32e601783dafe599ce678b5e2697b6cedac42118d0e4b5aa7abfca2a6534065494157905dffd46446290b24587827
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query@npm:^5.8.3":
+  version: 5.8.3
+  resolution: "@tanstack/react-query@npm:5.8.3"
+  dependencies:
+    "@tanstack/query-core": "npm:5.8.3"
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+    react-native: "*"
+  peerDependenciesMeta:
+    react-dom:
+      optional: true
+    react-native:
+      optional: true
+  checksum: 88456cb53223bb1691b6af890699becd0396c6d639a1a4f87e93ba9632047cb0b5ae8cbe739f2610c79f5c5b21486ad12cc5871c28e961d5c454498d15614527
+  languageName: node
+  linkType: hard
+
 "@tanstack/react-table@npm:^8.10.7":
   version: 8.10.7
   resolution: "@tanstack/react-table@npm:8.10.7"
@@ -1705,6 +1725,39 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@uitje/ui@npm:*, @uitje/ui@workspace:packages/ui":
+  version: 0.0.0-use.local
+  resolution: "@uitje/ui@workspace:packages/ui"
+  dependencies:
+    "@radix-ui/react-avatar": "npm:^1.0.4"
+    "@radix-ui/react-checkbox": "npm:^1.0.4"
+    "@radix-ui/react-dialog": "npm:^1.0.5"
+    "@radix-ui/react-dropdown-menu": "npm:^2.0.6"
+    "@radix-ui/react-label": "npm:^2.0.2"
+    "@radix-ui/react-popover": "npm:^1.0.7"
+    "@radix-ui/react-scroll-area": "npm:^1.0.5"
+    "@radix-ui/react-select": "npm:^2.0.0"
+    "@radix-ui/react-slot": "npm:^1.0.2"
+    "@types/react": "npm:^18.2.35"
+    "@types/react-dom": "npm:^18.2.14"
+    "@uitje/utils": "npm:*"
+    eslint: "npm:^8.53.0"
+    react: "npm:^18.2.0"
+    react-day-picker: "npm:^8.9.1"
+    react-dom: "npm:18.2.0"
+    typescript: "npm:^5.2.2"
+  languageName: unknown
+  linkType: soft
+
+"@uitje/utils@npm:*, @uitje/utils@workspace:packages/utils":
+  version: 0.0.0-use.local
+  resolution: "@uitje/utils@workspace:packages/utils"
+  dependencies:
+    eslint: "npm:^8.53.0"
+    typescript: "npm:^5.2.2"
+  languageName: unknown
+  linkType: soft
+
 "@ungap/structured-clone@npm:^1.2.0":
   version: 1.2.0
   resolution: "@ungap/structured-clone@npm:1.2.0"
@@ -2002,6 +2055,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"asynckit@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "asynckit@npm:0.4.0"
+  checksum: d73e2ddf20c4eb9337e1b3df1a0f6159481050a5de457c55b14ea2e5cb6d90bb69e004c9af54737a5ee0917fcf2c9e25de67777bbe58261847846066ba75bc9d
+  languageName: node
+  linkType: hard
+
 "autoprefixer@npm:^10.4.16":
   version: 10.4.16
   resolution: "autoprefixer@npm:10.4.16"
@@ -2034,6 +2094,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"axios@npm:^1.6.1":
+  version: 1.6.1
+  resolution: "axios@npm:1.6.1"
+  dependencies:
+    follow-redirects: "npm:^1.15.0"
+    form-data: "npm:^4.0.0"
+    proxy-from-env: "npm:^1.1.0"
+  checksum: ca2c6f56659a7f19e4a99082f549fe151952f6fd8aa72ed148559ab2d6a32ce37cd5dc72ce6d4d3cd91f0c1e2617c7c95c20077e5e244a79f319a6c0ce41204f
+  languageName: node
+  linkType: hard
+
 "axobject-query@npm:^3.1.1":
   version: 3.2.1
   resolution: "axobject-query@npm:3.2.1"
@@ -2042,41 +2113,6 @@ __metadata:
   checksum: f7debc2012e456139b57d888c223f6d3cb4b61eb104164a85e3d346273dd6ef0bc9a04b6660ca9407704a14a8e05fa6b6eb9d55f44f348c7210de7ffb350c3a7
   languageName: node
   linkType: hard
-
-"balance@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "balance@workspace:."
-  dependencies:
-    "@hookform/resolvers": "npm:^3.3.2"
-    "@radix-ui/react-toast": "npm:^1.1.5"
-    "@sapphire/eslint-config": "npm:^5.0.2"
-    "@sapphire/ts-config": "npm:^5.0.0"
-    "@snowcrystals/prettier-config": "npm:^1.0.0"
-    "@tanstack/react-table": "npm:^8.10.7"
-    "@types/node": "npm:^20.8.10"
-    "@typescript-eslint/eslint-plugin": "npm:^6.9.1"
-    "@typescript-eslint/parser": "npm:^6.9.1"
-    class-variance-authority: "npm:^0.7.0"
-    clsx: "npm:^2.0.0"
-    date-fns: "npm:^2.30.0"
-    eslint: "npm:^8.53.0"
-    eslint-config-next: "npm:^14.0.1"
-    eslint-config-prettier: "npm:^9.0.0"
-    eslint-plugin-prettier: "npm:^5.0.1"
-    husky: "npm:^8.0.3"
-    is-ci: "npm:^3.0.1"
-    lint-staged: "npm:^15.0.2"
-    lucide-react: "npm:^0.292.0"
-    nodemon: "npm:^3.0.1"
-    prettier: "npm:^3.0.3"
-    react-hook-form: "npm:^7.48.2"
-    tailwind-merge: "npm:^2.0.0"
-    tailwindcss-animate: "npm:^1.0.7"
-    turbo: "npm:^1.10.16"
-    typescript: "npm:5.2.2"
-    zod: "npm:^3.22.4"
-  languageName: unknown
-  linkType: soft
 
 "balanced-match@npm:^1.0.0":
   version: 1.0.2
@@ -2345,6 +2381,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"combined-stream@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "combined-stream@npm:1.0.8"
+  dependencies:
+    delayed-stream: "npm:~1.0.0"
+  checksum: 0dbb829577e1b1e839fa82b40c07ffaf7de8a09b935cadd355a73652ae70a88b4320db322f6634a4ad93424292fa80973ac6480986247f1734a1137debf271d5
+  languageName: node
+  linkType: hard
+
 "commander@npm:11.1.0":
   version: 11.1.0
   resolution: "commander@npm:11.1.0"
@@ -2480,6 +2525,13 @@ __metadata:
     has-property-descriptors: "npm:^1.0.0"
     object-keys: "npm:^1.1.1"
   checksum: 88a152319ffe1396ccc6ded510a3896e77efac7a1bfbaa174a7b00414a1747377e0bb525d303794a47cf30e805c2ec84e575758512c6e44a993076d29fd4e6c3
+  languageName: node
+  linkType: hard
+
+"delayed-stream@npm:~1.0.0":
+  version: 1.0.0
+  resolution: "delayed-stream@npm:1.0.0"
+  checksum: d758899da03392e6712f042bec80aa293bbe9e9ff1b2634baae6a360113e708b91326594c8a486d475c69d6259afb7efacdc3537bfcda1c6c648e390ce601b19
   languageName: node
   linkType: hard
 
@@ -3296,12 +3348,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"follow-redirects@npm:^1.15.0":
+  version: 1.15.3
+  resolution: "follow-redirects@npm:1.15.3"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: 915a2cf22e667bdf47b1a43cc6b7dce14d95039e9bbf9a24d0e739abfbdfa00077dd43c86d4a7a19efefcc7a99af144920a175eedc3888d268af5df67c272ee5
+  languageName: node
+  linkType: hard
+
 "for-each@npm:^0.3.3":
   version: 0.3.3
   resolution: "for-each@npm:0.3.3"
   dependencies:
     is-callable: "npm:^1.1.3"
   checksum: 22330d8a2db728dbf003ec9182c2d421fbcd2969b02b4f97ec288721cda63eb28f2c08585ddccd0f77cb2930af8d958005c9e72f47141dc51816127a118f39aa
+  languageName: node
+  linkType: hard
+
+"form-data@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "form-data@npm:4.0.0"
+  dependencies:
+    asynckit: "npm:^0.4.0"
+    combined-stream: "npm:^1.0.8"
+    mime-types: "npm:^2.1.12"
+  checksum: cb6f3ac49180be03ff07ba3ff125f9eba2ff0b277fb33c7fc47569fc5e616882c5b1c69b9904c4c4187e97dd0419dd03b134174756f296dec62041e6527e2c6e
   languageName: node
   linkType: hard
 
@@ -4457,6 +4530,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mime-db@npm:1.52.0":
+  version: 1.52.0
+  resolution: "mime-db@npm:1.52.0"
+  checksum: 0557a01deebf45ac5f5777fe7740b2a5c309c6d62d40ceab4e23da9f821899ce7a900b7ac8157d4548ddbb7beffe9abc621250e6d182b0397ec7f10c7b91a5aa
+  languageName: node
+  linkType: hard
+
+"mime-types@npm:^2.1.12":
+  version: 2.1.35
+  resolution: "mime-types@npm:2.1.35"
+  dependencies:
+    mime-db: "npm:1.52.0"
+  checksum: 82fb07ec56d8ff1fc999a84f2f217aa46cb6ed1033fefaabd5785b9a974ed225c90dc72fff460259e66b95b73648596dbcc50d51ed69cdf464af2d237d3149b2
+  languageName: node
+  linkType: hard
+
 "mimic-fn@npm:^2.1.0":
   version: 2.1.0
   resolution: "mimic-fn@npm:2.1.0"
@@ -5195,6 +5284,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prisma@npm:^5.5.2":
+  version: 5.5.2
+  resolution: "prisma@npm:5.5.2"
+  dependencies:
+    "@prisma/engines": "npm:5.5.2"
+  bin:
+    prisma: build/index.js
+  checksum: 60a84b4f4877e45472e3dd375b7ada1e743effc1974470d0993c279afab1d612aba1f14c1144b1e4c1ad74a9dde2c5f7411ff395131619a2c70b017f32d65fac
+  languageName: node
+  linkType: hard
+
 "promise-inflight@npm:^1.0.1":
   version: 1.0.1
   resolution: "promise-inflight@npm:1.0.1"
@@ -5220,6 +5320,13 @@ __metadata:
     object-assign: "npm:^4.1.1"
     react-is: "npm:^16.13.1"
   checksum: 59ece7ca2fb9838031d73a48d4becb9a7cc1ed10e610517c7d8f19a1e02fa47f7c27d557d8a5702bec3cfeccddc853579832b43f449e54635803f277b1c78077
+  languageName: node
+  linkType: hard
+
+"proxy-from-env@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "proxy-from-env@npm:1.1.0"
+  checksum: fe7dd8b1bdbbbea18d1459107729c3e4a2243ca870d26d34c2c1bcd3e4425b7bcc5112362df2d93cc7fb9746f6142b5e272fd1cc5c86ddf8580175186f6ad42b
   languageName: node
   linkType: hard
 
@@ -6350,6 +6457,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"uitje@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "uitje@workspace:."
+  dependencies:
+    "@hookform/resolvers": "npm:^3.3.2"
+    "@radix-ui/react-toast": "npm:^1.1.5"
+    "@sapphire/eslint-config": "npm:^5.0.2"
+    "@sapphire/ts-config": "npm:^5.0.0"
+    "@snowcrystals/prettier-config": "npm:^1.0.0"
+    "@tanstack/react-query": "npm:^5.8.3"
+    "@tanstack/react-table": "npm:^8.10.7"
+    "@types/node": "npm:^20.8.10"
+    "@typescript-eslint/eslint-plugin": "npm:^6.9.1"
+    "@typescript-eslint/parser": "npm:^6.9.1"
+    axios: "npm:^1.6.1"
+    class-variance-authority: "npm:^0.7.0"
+    clsx: "npm:^2.0.0"
+    date-fns: "npm:^2.30.0"
+    eslint: "npm:^8.53.0"
+    eslint-config-next: "npm:^14.0.1"
+    eslint-config-prettier: "npm:^9.0.0"
+    eslint-plugin-prettier: "npm:^5.0.1"
+    husky: "npm:^8.0.3"
+    is-ci: "npm:^3.0.1"
+    lint-staged: "npm:^15.0.2"
+    lucide-react: "npm:^0.292.0"
+    nodemon: "npm:^3.0.1"
+    prettier: "npm:^3.0.3"
+    react-hook-form: "npm:^7.48.2"
+    tailwind-merge: "npm:^2.0.0"
+    tailwindcss-animate: "npm:^1.0.7"
+    turbo: "npm:^1.10.16"
+    typescript: "npm:5.2.2"
+    zod: "npm:^3.22.4"
+  languageName: unknown
+  linkType: soft
+
 "unbox-primitive@npm:^1.0.2":
   version: 1.0.2
   resolution: "unbox-primitive@npm:1.0.2"
@@ -6469,18 +6613,20 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "web@workspace:apps/web"
   dependencies:
-    "@balance/ui": "npm:*"
-    "@balance/utils": "npm:*"
+    "@prisma/client": "npm:^5.5.2"
     "@types/node": "npm:^20.8.10"
     "@types/react": "npm:^18.2.35"
     "@types/react-dom": "npm:^18.2.14"
     "@types/twemoji-parser": "npm:^13.1.3"
     "@uidotdev/usehooks": "npm:^2.4.1"
+    "@uitje/ui": "npm:*"
+    "@uitje/utils": "npm:*"
     autoprefixer: "npm:^10.4.16"
     eslint: "npm:8.53.0"
     next: "npm:14.0.1"
     next-themes: "npm:^0.2.1"
     postcss: "npm:^8.4.31"
+    prisma: "npm:^5.5.2"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     tailwindcss: "npm:^3.3.5"
