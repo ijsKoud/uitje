@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Uitje" ALTER COLUMN "owner" DROP DEFAULT;
