@@ -1,15 +1,18 @@
 "use client";
 
 import { ThemeProvider } from "next-themes";
-import { Toaster } from "@balance/ui/toaster";
+import { Toaster } from "@uitje/ui/toaster";
 import React from "react";
+import { SessionProvider } from "next-auth/react";
 
 const Providers: React.FC<React.PropsWithChildren> = ({ children }) => {
 	return (
-		<ThemeProvider attribute="class" enableSystem defaultTheme="dark">
-			<Toaster />
-			{children}
-		</ThemeProvider>
+		<SessionProvider>
+			<ThemeProvider attribute="class" enableSystem defaultTheme="dark">
+				<Toaster />
+				{children}
+			</ThemeProvider>
+		</SessionProvider>
 	);
 };
 
