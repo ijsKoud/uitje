@@ -41,7 +41,9 @@ const CreateForm: React.FC<Props> = ({ userId, name }) => {
 
 	async function onSubmit(values: z.infer<typeof formSchema>) {
 		try {
-			const uitje = await formSubmitHandler(values, userId);
+			const uitje = await formSubmitHandler(values);
+			if (!uitje) return router.push(`/login?redirect=${encodeURIComponent("/uitje/create")}`);
+
 			router.push(`/uitje/${uitje.uitjeId}`);
 		} catch (error) {
 			toast({ variant: "destructive", title: "Unable to create new uitje", description: "Something went wrong, please try again later." });
