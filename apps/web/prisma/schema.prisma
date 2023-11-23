@@ -26,7 +26,7 @@ model Transaction {
 
 model Uitje {
   uitjeId   String   @id @unique @default(uuid()) @map("uitje_id")
-  createdAt DateTime @default(now()) @map("created_at") @db.Date
+  createdAt DateTime @default(now()) @map("created_at")
 
   title   String  @db.VarChar(128)
   private Boolean @default(true)
