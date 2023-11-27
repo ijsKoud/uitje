@@ -8,7 +8,7 @@ import { Metadata } from "next";
 const InterFont = Inter({ display: "swap", subsets: ["latin"], weight: ["300", "400", "500", "600", "700", "800", "900"] });
 
 export const metadata: Metadata = {
-	title: { default: "Uitje - Easily calculate the money other people owe you", template: "Uitje - %s" }
+	title: { default: "Uitje - Easily calculate what other people owe you", template: "Uitje - %s" }
 };
 
 const RootLayout: React.FC<React.PropsWithChildren> = ({ children, ...props }) => {
