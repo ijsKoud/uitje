@@ -17,7 +17,7 @@ interface Props {
 	existingUsers: { name: string; userId?: string | undefined }[];
 }
 
-const CreateUserDialog: React.FC<Props> = ({ onChange, existingUsers }) => {
+const CreateUserDialog: React.FC<React.PropsWithChildren<Props>> = ({ onChange, existingUsers, children }) => {
 	const { toast } = useToast();
 	const [open, setOpen] = useState(false);
 
@@ -57,9 +57,11 @@ const CreateUserDialog: React.FC<Props> = ({ onChange, existingUsers }) => {
 	return (
 		<Dialog open={open} onOpenChange={setOpen}>
 			<DialogTrigger asChild>
-				<Button type="button" variant="secondary">
-					<UserPlus2Icon className="mr-2 h-4 w-4" /> Add participant
-				</Button>
+				{children || (
+					<Button type="button" variant="secondary">
+						<UserPlus2Icon className="mr-2 h-4 w-4" /> Add participant
+					</Button>
+				)}
 			</DialogTrigger>
 
 			<DialogContent>
