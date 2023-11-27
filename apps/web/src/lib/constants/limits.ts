@@ -1,0 +1,2 @@
+export const MAX_UITJE_PARTICIPANTS = 100;
+export const MAX_UITJE_TRANSACTIONS = 50;
