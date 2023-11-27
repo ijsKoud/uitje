@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="http://cdn.ijskoud.dev/assets/logo.svg" width="100%" />
+    <img src="https://ijskoud.dev/assets/svg/logo.svg" width="100%" />
     <h1>uitje</h1>
   
   <p>Easily calculate what other people owe you 🧮</p>
